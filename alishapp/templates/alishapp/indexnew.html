@@ -1,0 +1,11 @@
+{% if All_Research %}
+<ul>
+{% for research in All_Research %}
+<li><a href="/alishapp/{{research.id}}/">{{research.Author}}</a></li>
+
+{% endfor %}
+</ul>
+
+{% else %}
+<h3>You do not have any Research...</h3>
+{% endif %}
